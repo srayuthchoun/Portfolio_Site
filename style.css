@@ -1,0 +1,71 @@
+body{
+    width: 100vw;
+    background-image: url("http://www.alwaysthinkingcomputers.com/wp-content/uploads/2011/10/headerimg.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+    background-size: 15%;
+
+}
+#main_content{
+    width: 90%;
+    margin: 0px auto;
+    text-align:center;
+    color: darkred;
+    font-weight: bold;
+    font-family: 'Raleway',sans-serif;
+}
+
+#main_content ul {
+    padding: 0;
+}
+
+#main_content li {
+    list-style-type: none;
+
+}
+
+#left_nav{
+    position: fixed;
+    left: 0px;
+    top: 50%;
+    border: 1px solid green;
+    transform: translate(-100%, -50%);
+    transition-duration: .25s;
+    background-color: aliceblue;
+    box-sizing: border-box;
+    padding: .5vh .5vw;
+}
+.nav_tab{
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: scaleX(1) translate(100%, -50%);
+    transition-duration: .25s;
+}
+#left_nav:hover {
+    transform: translate(0%, -50%);
+    transition-duration: .5s;
+}
+#left_nav:hover .nav_tab{
+    transform: scaleX(0) translate(100%, -50%);
+    transition-delay: .2s;
+
+}
+.nav_tab > span{
+    display: block;
+    border: 1px solid black;
+    width: 3vw;
+    margin: 1vh auto;
+}
+
+#title {
+    height: 15vh;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-family: 'Raleway',sans-serif;
+    text-shadow: 2px 2px 8px #FF0000;
+}
+
+
