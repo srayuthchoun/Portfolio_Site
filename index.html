@@ -20,24 +20,25 @@
         <span></span>
     </div>
     <ul>
-        <li>About Me</li>
-        <li>Skills</li>
-        <li>Experience</li>
-        <li>Contact Me</li>
+        <li><a href="#about_me">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact_me">Contact Me</a></li>
     </ul>
 </div>
 <div id="main_content">
-    <h4>About Me</h4>
+    <h4 class="headers"><a id="about_me"></a>About Me</h4>
     <ul>
-        <li>Worked in the IT industry as a technical\desktop support analyst for 7+ years.  On my spare time, I enjoy
-            building and fixing computers, reading about new advances in technology, watching movies and staying fit.
+        <li>Worked in the IT industry as a technical\desktop support analyst for 7+ years.  On my free time, I enjoy
+            building and fixing computers, reading about new advances and gadgets in technology, watching movies and
+            staying fit.
         </li>
         <li>I am taking the class to better myself and to become a proficiently skilled web developer.</li>
         <li>The type of job I want in web development is to become a back-end web developer.  I have
-            always been fascinated and intrigued on the inner workings of how the back-end transmits information
-            to the front-end for the web users.</li>
+            always been fascinated and intrigued on the inner workings of how the back-end transmits and communicates
+            information to the front-end for the web users.</li>
     </ul>
-    <h4>Skills</h4>
+    <h4 class="headers"><a id="skills"></a>Skills</h4>
     <ul>
         <li>HTML5\CSS3</li>
         <li>Javascript\jQuery</li>
@@ -45,7 +46,7 @@
         <li>phpStorm</li>
         <li>Git\Github</li>
     </ul>
-    <h4>Experience</h4>
+    <h4 class="headers"><a id="experience"></a>Experience</h4>
     <li>Glidewell Laboratories
         <ul>
             <li>IT Technical Support Analyst II</li>
@@ -73,12 +74,32 @@
             </li>
         </ul>
     </li>
-
-    <h4>Contact Me</h4>
+    <h4 class="headers"><a id="contact_me"></a>Contact Me</h4>
     <ul>
-        <li><a href="https://github.com/srayuthchoun"> Github</a> <i class="fa fa-github"></i></li>
+        <li><a href="https://github.com/srayuthchoun">Github </a> <i class="fa fa-github"></i></li>
         <li>(714)661-3956 <i class="fa fa-mobile"></i></li>
         <li>srayuth.choun@gmail.com <i class="fa fa-envelope"></i></li>
+        <li><a href="https://linkedin.com">Linkedin </a> <i class="fa fa-linkedin-square"></i></li> <!-- I do not
+        have a linkedin account at the moment.  Will create and add it later to the page -->
+
+        <form action="/my-handling-form-page" method="post">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name" />
+            </div>
+            <div>
+                <label for="mail">E-mail:</label>
+                <input type="email" id="mail" name="user_email" />
+            </div>
+            <div>
+                <label for="msg">Message:</label>
+                <textarea id="msg" name="user_message"></textarea>
+            </div>
+
+            <div class="button">
+                <button type="submit">Send your message</button>
+            </div>
+        </form>
     </ul>
 </div>
 </body>
