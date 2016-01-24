@@ -67,14 +67,41 @@
             color: #1abc9c !important;
         }
         .inside_container_fluid {
-            margin-left: 19%;
-            margin-right: 19%;
+            margin-left: 22%;
+            margin-right: 22%;
         }
         .img-circle{
-            height:300px;
-            width:300px;
+            height:225px;
+            width:225px;
             overflow:hidden;
             border-radius:50%;
+        }
+        figure{
+            position: relative;
+
+        }
+        .skills-centered-text{
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+        }
+        figcaption{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            transform: translateY(100%);
+            transition-duration: 1s;
+            opacity: 0;
+            background-color: rgba(255,255,255,.6);
+        }
+
+        figure:hover figcaption{
+            opacity: 1;
+            transform: translateY(0%);
+            transition: .5s;
         }
 
     </style>
@@ -104,7 +131,7 @@
     <div class="container-fluid bg-1 text-center">
         <h1>I'm Srayuth.</h1>
         <img src=images/headerimg.jpg class="img-circle img-responsive" style="display: inline"  alt="Globe image">
-        <h1>A developer.</h1>
+        <h1>a web developer.</h1>
     </div>
 
     <div class="container-fluid bg-2 text-center" id="about_me">
@@ -121,12 +148,23 @@
     </div>
 
     <div class="container-fluid bg-3 text-center" id="skills">
-        <h2>Skills</h2><br>
-        <p>HTML5\CSS3</p>
-        <p>Javascript\jQuery</p>
-        <p>mySQL</p>
-        <p>phpStorm</p>
-        <p>Git\Github</p>
+        <figure>
+            <figcaption>
+                <div class="skills-centered-text">
+                    <p>
+                        <img src="images/technologies.png" class="img-responsive">
+                    </p>
+                </div>
+            </figcaption>
+            <div class="skills">
+                <h2>Skills</h2><br>
+                <p>HTML5\CSS3</p>
+                <p>Javascript\jQuery</p>
+                <p>mySQL</p>
+                <p>phpStorm</p>
+                <p>Git\Github</p>
+            </div>
+        </figure>
     </div>
 
     <div class="container-fluid bg-2 text-center" id="experience">
@@ -165,26 +203,29 @@
         <h2>Contact Me</h2><br>
         <ul>
             <li><a href="https://github.com/srayuthchoun">Github </a> <i class="fa fa-github"></i></li>
-            <li>(714)661-3956 <i class="fa fa-mobile"></i></li>
-            <li><a href="mailto:srayuth.choun@gmail.com">srayuth.choun@gmail.com</a> <i class="fa fa-envelope"></i></li>
+            <li><a href="tel:7146613956">(714) 661-3956</a> <i class="fa fa-mobile"></i></li>
+            <li><a href="mailto:srayuth.choun@gmail.com">Email</a> <i class="fa fa-envelope"></i></li>
             <li><a href="https://www.linkedin.com/in/srayuth-choun-882b18112">Linkedin </a>
                 <i class="fa fa-linkedin-square"></i></li>
-        </ul>
-                <h3>Vertical (basic) form</h3>
-                <form role="form">
+        </ul><br>
+
+            <div class="form">
+                <form role="form" action="http://learningfuze.com/echo.php" method="get">
                     <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Name">
                         <label for="email">Email:</label>
-                        <input type="email" class="form-control" id="email" placeholder="Enter email">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" class="form-control" id="phone" name="phone_number"
+                               placeholder="Phone Number">
+                        <label for="message">Message:</label>
+                        <textarea rows="5" class="form-control" id="message" name="message"
+                                  placeholder="Message"></textarea>
                     </div>
-                    <div class="form-group">
-                        <label for="pwd">Password:</label>
-                        <input type="password" class="form-control" id="pwd" placeholder="Enter password">
-                    </div>
-                    <div class="checkbox">
-                        <label><input type="checkbox"> Remember me</label>
-                    </div>
-                    <button type="submit" class="btn btn-default">Submit</button>
+                    <button type="submit" class="btn btn-success btn-lg" id="button">Send</button>
                 </form>
+            </div>
 
         </div>
     </div>
