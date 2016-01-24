@@ -1,106 +1,196 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <title>Srayuth Choun's Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Portfolio">
     <meta name="keywords" content="HTML, CSS, Portfolio">
     <meta name="author" content="Srayuth Choun">
-    <title>Layout3</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="#style.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"
           type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <style>
+        .container-fluid {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        body {
+            font: 20px "Montserrat", sans-serif;
+            line-height: 1.8;
+            color: #f5f6f7;
+            position: relative;
+        }
+        p {
+            font-size: 16px;
+        }
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        li {
+            font-size: 16px;
+            list-style: none;
+        }
+        h2 {
+            text-decoration: underline;
+        }
+        .bg-1 {
+            background-color: #1abc9c; /* Green */
+            color: #ffffff;
+        }
+        .bg-2 {
+            background-color: #474e5d; /* Dark Blue */
+            color: #ffffff;
+        }
+        .bg-3 {
+            background-color: #ffffff; /* White */
+            color: #555555;
+        }
+        .bg-4 {
+            background-color: #2f2f2f; /* Black Gray */
+            color: #fff;
+        }
+        .navbar {
+            border: 0;
+            border-radius: 0;
+            margin-bottom: 0;
+            font-size: 16px;
+            letter-spacing: 2px;
+
+        }
+        .navbar-nav li a:hover {
+            color: #1abc9c !important;
+        }
+        .inside_container_fluid {
+            margin-left: 19%;
+            margin-right: 19%;
+        }
+        .img-circle{
+            height:300px;
+            width:300px;
+            overflow:hidden;
+            border-radius:50%;
+        }
+
+    </style>
 </head>
-<body>
-<div id="title">
-    <h1>Portfolio</h1>
-</div>
-<div id="left_nav">
-    <div class="nav_tab">
-        <span></span>
-        <span></span>
-        <span></span>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Portfolio</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#about_me">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact_me">Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid bg-1 text-center">
+        <h1>I'm Srayuth.</h1>
+        <img src=images/headerimg.jpg class="img-circle img-responsive" style="display: inline"  alt="Globe image">
+        <h1>A developer.</h1>
     </div>
-    <ul>
-        <li><a href="#about_me">About Me</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#contact_me">Contact Me</a></li>
-    </ul>
-</div>
-<div id="main_content">
-    <h4 class="headers"><a id="about_me"></a>About Me</h4>
-    <ul>
-        <li>Worked in the IT industry as a technical\desktop support analyst for 7+ years.  On my free time, I enjoy
-            building and fixing computers, reading about new advances and gadgets in technology, watching movies and
-            staying fit.
-        </li>
-        <li>I am taking the class to better myself and to become a proficiently skilled web developer.</li>
-        <li>The type of job I want in web development is to become a back-end web developer.  I have
-            always been fascinated and intrigued on the inner workings of how the back-end transmits and communicates
-            information to the front-end for the web users.</li>
-    </ul>
-    <h4 class="headers"><a id="skills"></a>Skills</h4>
-    <ul>
-        <li>HTML5\CSS3</li>
-        <li>Javascript\jQuery</li>
-        <li>mySQL</li>
-        <li>phpStorm</li>
-        <li>Git\Github</li>
-    </ul>
-    <h4 class="headers"><a id="experience"></a>Experience</h4>
-    <li>Glidewell Laboratories
-        <ul>
-            <li>IT Technical Support Analyst II</li>
-            <li>April 2013 - January 2016</li>
-            <li>Create PC images. Install, configure and validate intra-oral scan and design software.
-                Coordinate and perform software deployments and upgrades utilizing SCCM.
-            </li>
-        </ul>
-    <li> Yum! Brands, Inc.
-        <ul>
-            <li>IT Helpdesk Analyst</li>
-            <li>September 2011 - April 2013</li>
-            <li>Troubleshot and provided support to restaurants' PC, laptop, POS registers, network devices and
-                and credit card terminals.
-            </li>
-        </ul>
-    </li>
-    <li>CKE Restaurants, Inc.
-        <ul>
-            <li>Senior Technical Support Analyst</li>
-            <li>June 2006 - September 2010</li>
-            <li>Diagnosed and resolved hardware and software problems for desktops, laptops and remote systems.
-                Provided escalation point and second level support for the helpdesk team. Assisted third party
-                vendors with remote support.
-            </li>
-        </ul>
-    </li>
-    <h4 class="headers"><a id="contact_me"></a>Contact Me</h4>
-    <ul>
-        <li><a href="https://github.com/srayuthchoun">Github </a> <i class="fa fa-github"></i></li>
-        <li>(714)661-3956 <i class="fa fa-mobile"></i></li>
-        <li>srayuth.choun@gmail.com <i class="fa fa-envelope"></i></li>
-        <li><a href="https://linkedin.com">Linkedin </a> <i class="fa fa-linkedin-square"></i></li> <!-- I do not
-        have a linkedin account at the moment.  Will create and add it later to the page -->
 
-        <form action="/my-handling-form-page" method="post">
-            <div>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="user_name" />
-            </div>
-            <div>
-                <label for="mail">E-mail:</label>
-                <input type="email" id="mail" name="user_email" />
-            </div>
-            <div>
-                <label for="msg">Message:</label>
-                <textarea id="msg" name="user_message"></textarea>
-            </div>
+    <div class="container-fluid bg-2 text-center" id="about_me">
+        <div class="inside_container_fluid">
+        <h2>About Me</h2><br>
+        <p>Hi, I've worked in the IT industry as a technical\desktop support analyst for 8 years.  On my free time, I
+            enjoy building and fixing computers, watching movies, reading about new advances and gadgets in technology.
+        </p>
+        <p>I am taking the class to develop a new skill-set and to become a proficient web developer.</p>
+        <p>Becoming a back-end web developer is what I'm striving towards.  I have always been fascinated and intrigued
+            on the inner workings of how the back-end transmits and communicates information to the front-end for the
+            web users.</p>
+        </div>
+    </div>
 
-            <div class="button">
-                <button type="submit">Send your message</button>
-            </div>
-        </form>
-    </ul>
-</div>
+    <div class="container-fluid bg-3 text-center" id="skills">
+        <h2>Skills</h2><br>
+        <p>HTML5\CSS3</p>
+        <p>Javascript\jQuery</p>
+        <p>mySQL</p>
+        <p>phpStorm</p>
+        <p>Git\Github</p>
+    </div>
+
+    <div class="container-fluid bg-2 text-center" id="experience">
+        <div class="inside_container_fluid">
+        <h2>Experience</h2><br>
+            <p style="font-weight: bold; font-style: italic">Glidewell Laboratories</p>
+                <ul>
+                    <li>IT Technical Support Analyst II</li>
+                    <li>April 2013 - January 2016</li>
+                </ul>
+                <p>Create PC images. Install, configure and validate intra-oral scan and design software.
+                   Coordinate and perform software deployments and upgrades utilizing SCCM.
+                </p><br>
+            <p style="font-weight: bold; font-style: italic"> Yum! Brands, Inc.</p>
+                <ul>
+                    <li>IT Helpdesk Analyst</li>
+                    <li>September 2011 - April 2013</li>
+                </ul>
+                <p>Troubleshot and provided support to restaurants' PC, laptop, POS registers, network devices and
+                   and credit card terminals.
+                </p><br>
+            <p style="font-weight: bold; font-style: italic">CKE Restaurants, Inc.</p>
+                <ul>
+                    <li>Senior Technical Support Analyst</li>
+                    <li>June 2006 - September 2010</li>
+                </ul>
+                <p>Diagnosed and resolved hardware and software problems for desktops, laptops and remote systems.
+                   Provided escalation point and second level support for the helpdesk team. Assisted third party
+                   vendors with remote support.
+                </p><br>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-3 text-center" id="contact_me">
+        <div class="inside_container_fluid">
+        <h2>Contact Me</h2><br>
+        <ul>
+            <li><a href="https://github.com/srayuthchoun">Github </a> <i class="fa fa-github"></i></li>
+            <li>(714)661-3956 <i class="fa fa-mobile"></i></li>
+            <li><a href="mailto:srayuth.choun@gmail.com">srayuth.choun@gmail.com</a> <i class="fa fa-envelope"></i></li>
+            <li><a href="https://www.linkedin.com/in/srayuth-choun-882b18112">Linkedin </a>
+                <i class="fa fa-linkedin-square"></i></li>
+        </ul>
+                <h3>Vertical (basic) form</h3>
+                <form role="form">
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">Password:</label>
+                        <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox"> Remember me</label>
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+
+        </div>
+    </div>
+
+    <footer class="container-fluid bg-4 text-center">
+        <p>© 2016 Srayuth Choun.</p>
+    </footer>
 </body>
 </html>
