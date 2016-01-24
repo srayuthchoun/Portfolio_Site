@@ -23,7 +23,7 @@ h2 {
     text-decoration: underline;
 }
 .bg-1 {
-    background-color: #1abc9c; /* Green */
+    background-color: #5d474e; /* Dark Red */
     color: #ffffff;
 }
 .bg-2 {
@@ -80,7 +80,7 @@ figcaption{
     height: 100%;
     width: 100%;
     transform: translateY(-5%);
-    transition-duration: 2.5s;
+    transition-duration: 2s;
     opacity: 0;
     background-color: rgba(255,255,255,.6);
 }
