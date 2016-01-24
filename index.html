@@ -7,107 +7,17 @@
     <meta name="description" content="Portfolio">
     <meta name="keywords" content="HTML, CSS, Portfolio">
     <meta name="author" content="Srayuth Choun">
-    <link rel="stylesheet" type="text/css" href="#style.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"
           type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <style>
-        .container-fluid {
-            padding-top: 50px;
-            padding-bottom: 50px;
-        }
-        body {
-            font: 20px "Montserrat", sans-serif;
-            line-height: 1.8;
-            color: #f5f6f7;
-            position: relative;
-        }
-        p {
-            font-size: 16px;
-        }
-        ul {
-            list-style: none;
-            padding-left: 0;
-        }
-        li {
-            font-size: 16px;
-            list-style: none;
-        }
-        h2 {
-            text-decoration: underline;
-        }
-        .bg-1 {
-            background-color: #1abc9c; /* Green */
-            color: #ffffff;
-        }
-        .bg-2 {
-            background-color: #474e5d; /* Dark Blue */
-            color: #ffffff;
-        }
-        .bg-3 {
-            background-color: #ffffff; /* White */
-            color: #555555;
-        }
-        .bg-4 {
-            background-color: #2f2f2f; /* Black Gray */
-            color: #fff;
-        }
-        .navbar {
-            border: 0;
-            border-radius: 0;
-            margin-bottom: 0;
-            font-size: 16px;
-            letter-spacing: 2px;
-
-        }
-        .navbar-nav li a:hover {
-            color: #1abc9c !important;
-        }
-        .inside_container_fluid {
-            margin-left: 22%;
-            margin-right: 22%;
-        }
-        .img-circle{
-            height:225px;
-            width:225px;
-            overflow:hidden;
-            border-radius:50%;
-        }
-        figure{
-            position: relative;
-
-        }
-        .skills-centered-text{
-            top: 50%;
-            left: 50%;
-            position: absolute;
-            transform: translate(-50%, -50%);
-        }
-        figcaption{
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 100%;
-            transform: translateY(-100%);
-            transition-duration: 1s;
-            opacity: 0;
-            background-color: rgba(255,255,255,.6);
-        }
-
-        figure:hover figcaption{
-            opacity: 1;
-            transform: translateY(0%);
-            transition: .75s;
-        }
-
-    </style>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top"> <!-- Navigation bar -->
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -128,13 +38,13 @@
         </div>
     </nav>
 
-    <div class="container-fluid bg-1 text-center">
+    <div class="container-fluid bg-1 text-center"> <!-- Header with image -->
         <h1>I'm Srayuth.</h1>
         <img src=images/headerimg.jpg class="img-circle img-responsive" style="display: inline"  alt="Globe image">
         <h1>a web developer.</h1>
     </div>
 
-    <div class="container-fluid bg-2 text-center" id="about_me">
+    <div class="container-fluid bg-2 text-center" id="about_me"> <!-- About me section -->
         <div class="inside_container_fluid">
         <h2>About Me</h2><br>
         <p>Hi, I've worked in the IT industry as a technical\desktop support analyst for 8 years.  On my free time, I
@@ -147,12 +57,12 @@
         </div>
     </div>
 
-    <div class="container-fluid bg-3 text-center" id="skills">
+    <div class="container-fluid bg-3 text-center" id="skills"> <!-- Skills section with overlay -->
         <figure>
             <figcaption>
                 <div class="skills-centered-text">
                     <p>
-                        <img src="images/technologies.png" class="img-responsive">
+                        <img src="images/skills-badges.png" class="img-responsive">
                     </p>
                 </div>
             </figcaption>
@@ -167,7 +77,7 @@
         </figure>
     </div>
 
-    <div class="container-fluid bg-2 text-center" id="experience">
+    <div class="container-fluid bg-2 text-center" id="experience"> <!-- Experience section -->
         <div class="inside_container_fluid">
         <h2>Experience</h2><br>
             <p style="font-weight: bold; font-style: italic">Glidewell Laboratories</p>
@@ -198,10 +108,10 @@
         </div>
     </div>
 
-    <div class="container-fluid bg-3 text-center" id="contact_me">
+    <div class="container-fluid bg-3 text-center" id="contact_me"> <!--Contact me section-->
         <div class="inside_container_fluid">
         <h2>Contact Me</h2><br>
-        <ul>
+        <ul id="contact_links">
             <li><a href="https://github.com/srayuthchoun">Github </a> <i class="fa fa-github"></i></li>
             <li><a href="tel:7146613956">(714) 661-3956</a> <i class="fa fa-mobile"></i></li>
             <li><a href="mailto:srayuth.choun@gmail.com">Email</a> <i class="fa fa-envelope"></i></li>
@@ -209,7 +119,7 @@
                 <i class="fa fa-linkedin-square"></i></li>
         </ul><br>
 
-            <div class="form">
+            <div class="form"> <!-- Contact form-->
                 <form role="form" action="http://learningfuze.com/echo.php" method="get">
                     <div class="form-group">
                         <label for="name">Name:</label>
@@ -230,7 +140,7 @@
         </div>
     </div>
 
-    <footer class="container-fluid bg-4 text-center">
+    <footer class="container-fluid bg-4 text-center"> <!--footer-->
         <p>© 2016 Srayuth Choun.</p>
     </footer>
 </body>
