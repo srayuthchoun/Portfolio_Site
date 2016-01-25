@@ -50,8 +50,8 @@ h2 {
     color: #1abc9c !important; /* Green */
 }
 .inside_container_fluid {
-    margin-left: 22%;
-    margin-right: 22%;
+    margin-left: 18%;
+    margin-right: 18%;
 }
 .img-circle{
     height:225px;
@@ -84,9 +84,14 @@ figcaption{
     opacity: 0;
     background-color: rgba(255,255,255,.6);
 }
-
 figure:hover figcaption{
     opacity: 1;
     transform: translateY(0%);
     transition: .5s;
+}
+@media screen and (min-width: 375px) and (max-width: 900px) {
+    .inside_container_fluid {
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
