@@ -5,7 +5,7 @@ body {
 }
 
 body {
-    font: 400 15px/1.8 Lato, sans-serif;
+    font: 400 20px/1.8 Lato, sans-serif;
     color: #777;
 }
 
@@ -16,7 +16,6 @@ body {
 header {
     position: relative;
     width: 100%;
-    min-height: auto;
     text-align: center;
     color: #fff;
     background-image: url(images/venice.jpg);
@@ -25,7 +24,7 @@ header {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    height: 1350px;
+    height: 1300px;
 }
 
 header .header-content {
@@ -56,20 +55,38 @@ header .header-content .header-content-inner p {
     color: #bdbdbd;
 }
 
-
 .bg-1 p {
     font-style: italic;
+    font-size: 20px
 }
 
+.bg-2 h2 {
+    color: #bdbdbd;
+}
+
+.bg-2 img {
+    width: 100%;
+}
 .thumbnail {
-    padding: 0 0 15px 0;
+    padding: 0 0 5px 0;
     border: none;
     border-radius: 0;
 }
+.thumbnail img {
+    margin: 0;
+    width: 100%;
+}
 
 .thumbnail p {
-    margin-top: 15px;
+    margin-top: 10px;
     color: #555;
+}
+.thumbnail img:hover {
+    opacity: 0.5;
+}
+
+.centered-text a {
+    padding: 5px 30px 0 30px;
 }
 
 .btn {
@@ -96,7 +113,7 @@ header .header-content .header-content-inner p {
     margin-bottom: 0;
     background-color: #2d2d30;
     border: 0;
-    font-size: 11px !important;
+    font-size: 12px !important;
     letter-spacing: 4px;
     opacity: 0.9;
 }
@@ -106,11 +123,11 @@ header .header-content .header-content-inner p {
 }
 
 .navbar-nav li a:hover {
-    color: #fff !important;
+    color: #40ff43 !important;
 }
 
 .navbar-nav li.active a {
-    color: #fff !important;
+    color: #40ff43 !important;
     background-color: #29292c !important;
 }
 
@@ -139,4 +156,8 @@ footer a:hover {
 
 textarea {
     resize: none;
+}
+
+#contact {
+    font-size: 20px;
 }
