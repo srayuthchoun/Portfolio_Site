@@ -252,6 +252,7 @@ textarea {
     font-weight: 300;
     color: #262626;
     text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    font-size: 2.4vh;
 }
 
 .grid figure h2 span {
@@ -266,6 +267,9 @@ textarea {
 .grid figure p {
     letter-spacing: 1px;
     font-size: 68.5%;
+    text-align: center;
+    position: relative;
+    top: 10%;
 }
 /*-----------------*/
 /***** Kira *****/
@@ -276,6 +280,8 @@ figure.effect-kira {
 }
 
 figure.effect-kira img {
+    filter: none;
+    -webkit-filter: grayscale(0%);
     -webkit-transition: opacity 0.35s;
     transition: opacity 0.35s;
     width: 500px;
@@ -289,7 +295,7 @@ figure.effect-kira figcaption {
 figure.effect-kira p {
     padding: 2.25em 0.5em;
     font-weight: 600;
-    font-size: 65%;
+    font-size: 50%;
     line-height: 1.5;
     opacity: 0;
     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
@@ -299,6 +305,8 @@ figure.effect-kira p {
 }
 
 figure.effect-kira p a {
+    position: relative;
+    top: 15px;
     margin: 0 0.3em;
     color: #101010;
 }
@@ -327,6 +335,8 @@ figure.effect-kira figcaption::before {
 
 figure.effect-kira:hover img {
     opacity: 0.5;
+    -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+    filter: grayscale(100%);
 }
 
 figure.effect-kira:hover p {
@@ -340,8 +350,6 @@ figure.effect-kira:hover figcaption::before {
     -webkit-transform: translate3d(0,5em,0) scale3d(1,1,1) ;
     transform: translate3d(0,5em,0) scale3d(1,1,1);
 }
-
-
 
 
 
