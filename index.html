@@ -12,10 +12,6 @@
     <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="style.css" type="text/css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script src="http://maps.googleapis.com/maps/api/js"></script>
-    <script src="script.js"></script>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
 
@@ -55,41 +51,45 @@
 <div class="bg-1 text-center" id="about">
     <div class="container">
         <h2>About Me</h2><br>
-        <p>Hi, I've worked in the IT industry as a technical\desktop support analyst for 8 years.  On my free time, I
+        <p>Hi, I've worked in the IT industry as a technical\desktop support analyst for 8 years. On my free time, I
             enjoy building and fixing computers, watching movies, reading about new advances and gadgets in technology.
         </p>
-        <p>Recently, I have transitioned into becoming a web developer, jump starting my knowledge with a high-intensity immersive bootcamp.  I now work on various projects to enhance my skills and develop attributes desirable to modern tech companies.</p>
-        <p>I've long been fascinated about the hidden world of client-server communications and how to leverage that power for better app design.  The amount of data that I use to make any sort of app that I can imagine is dizzying and I really enjoy the creativity one can experience just working with raw data.</p>
+        <p>Recently, I have transitioned into becoming a web developer, jump starting my knowledge with a high-intensity
+            immersive bootcamp.  I now work on various projects to enhance my skills and develop attributes desirable to
+            modern tech companies.</p>
+        <p>I've long been fascinated about the hidden world of client-server communications and how to leverage that
+            power for better app design.  The amount of data that I use to make any sort of app that I can imagine is
+            dizzying and I really enjoy the creativity one can experience just working with raw data.</p>
     </div>
 </div>
 
 <!-- Container (Skills Section) -->
-<div class="bg-2 container text-center" id="skills">
-    <div class="row centered">
+<div class="bg-2 text-center" id="skills">
+    <div class="container">
         <h2>Tech Stack</h2>
         <br>
-        <div class="col-md-2 icon">
-            <img src="images/html5.png" alt="" width="130" height="130">
+        <div class="col-md-2 logo">
+            <img src="images/html5.png" alt="">
             <h3 class="hidden-xs hidden-sm">HTML5</h3>
         </div>
-        <div class="col-md-2 icon">
-            <img src="images/css3.png" alt="" width="130" height="130">
+        <div class="col-md-2 logo">
+            <img src="images/css3.png" alt="">
             <h3 class="hidden-xs hidden-sm">CSS3</h3>
         </div>
-        <div class="col-md-2 icon">
-            <img src="images/javascript.png" alt="" width="130" height="130">
+        <div class="col-md-2 logo">
+            <img src="images/javascript.png" alt="">
             <h3 class="hidden-xs hidden-sm">Javascript</h3>
         </div>
-        <div class="col-md-2 icon">
-            <img src="images/angularjs.png" alt="" width="130" height="130">
+        <div class="col-md-2 logo">
+            <img src="images/angularjs.png" alt="">
             <h3 class="hidden-xs hidden-sm">AngularJS</h3>
         </div>
-        <div class="col-md-2 icon">
-            <img src="images/firebase.png" alt="" width="130" height="130">
+        <div class="col-md-2 logo">
+            <img src="images/firebase.png" alt="">
             <h3 class="hidden-xs hidden-sm">Firebase</h3>
         </div>
-        <div class="col-md-2 icon">
-            <img src="images/github.png" alt="" width="130" height="130">
+        <div class="col-md-2 logo">
+            <img src="images/github.png" alt="">
             <h3 class="hidden-xs hidden-sm">Github</h3>
         </div>
     </div>
@@ -98,79 +98,73 @@
 <!-- Container (Projects Section) -->
 <div id="projects" class="bg-1 text-center">
     <div class="container">
-        <h2>Projects</h2><br>
-        <div class="row text-center">
-            <div class="col-sm-6">
-                <div class="thumbnail">
-                    <img src="images/calc.jpg" alt="Calculator" width="420" height="315">
-                    <div class="text-center centered-text">
-                        <a href="#">Code</a>
-                        <a href="#">Demo</a>
-                        <a href="#">About</a>
-                    </div>
-                    <p><strong>Caculator</strong></p>
-                </div>
-
-            </div>
-            <div class="col-sm-6">
-                <div class="thumbnail">
-                    <img src="images/memory_match.png" alt="Memory_Match" width="420" height="315">
-                    <div class="text-center centered-text">
-                        <a href="#">Code</a>
-                        <a href="#">Demo</a>
-                        <a href="#">About</a>
-                    </div>
-                    <p><strong>Memory Match</strong></p>
-                </div>
-            </div>
+        <h2>Projects</h2>
+        <br>
+        <div class="grid">
+            <figure class="effect-kira">
+                <img src="images/calc.jpg" alt="calculator"/>
+                <figcaption>
+                    <h2><span>Calculator</span></h2>
+                    <p>
+                        <a href="#"><i class="fa fa-cog fa-spin"></i>Try it out</a>
+                        <a href="#"><i class="fa fa-code"></i>Code</a>
+                    </p>
+                </figcaption>
+            </figure>
+            <figure class="effect-kira">
+                <img src="images/tic_tac_toe.png" alt="tic-tac-toe"/>
+                <figcaption>
+                    <h2><span>Tic-Tac-Toe</span></h2>
+                    <p>
+                        <a href="#"><i class="fa fa-cog fa-spin"></i>Try it out</a>
+                        <a href="#"><i class="fa fa-code"></i>Code</a>
+                    </p>
+                </figcaption>
+            </figure>
         </div>
-        <div class="row text-center">
-            <div class="col-sm-6">
-                <div class="thumbnail">
-                    <img src="images/tic_tac_toe.png" alt="Tic_Tac_toe" width="420" height="315">
-                    <div class ="text-center centered-text">
-                        <a href="#">Code</a>
-                        <a href="#">Demo</a>
-                        <a href="#">About</a>
-                    </div>
-                    <p><strong>Tic-Tac-Toe</strong></p>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="thumbnail">
-                    <img src="images/sgt.png" alt="Student_Grade_Table" width="420" height="315">
-                    <div class ="text-center centered-text">
-                        <a href="#">Code</a>
-                        <a href="#">Demo</a>
-                        <a href="#">About</a>
-                    </div>
-                    <p><strong>Student Grade Table</strong></p>
-                </div>
-            </div>
+        <div class="grid">
+            <figure class="effect-kira">
+                <img src="images/sgt.png" alt="student-grade-table"/>
+                <figcaption>
+                    <h2>Student <span>Grade Table</span></h2>
+                    <p>
+                        <a href="#"><i class="fa fa-cog fa-spin"></i>Try it out</a>
+                        <a href="#"><i class="fa fa-code"></i>Code</a>
+                    </p>
+                </figcaption>
+            </figure>
+            <figure class="effect-kira">
+                <img src="images/travel_guide.png" alt="travel-guide"/>
+                <figcaption>
+                    <h2>Travel <span>Guide</span></h2>
+                    <p>
+                        <a href="#"><i class="fa fa-cog fa-spin"></i>Try it out</a>
+                        <a href="#"><i class="fa fa-code"></i>Code</a>
+                    </p>
+                </figcaption>
+            </figure>
         </div>
-        <div class="row text-center">
-            <div class="col-sm-6">
-                <div class="thumbnail">
-                    <img src="images/mboutique.png" alt="Mboutique" width="420" height="315">
-                    <div class ="text-center centered-text">
-                        <a href="#">Code</a>
-                        <a href="#">Demo</a>
-                        <a href="#">About</a>
-                    </div>
-                    <p><strong>Mboutique</strong></p>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="thumbnail">
-                    <img src="images/travel_guide.png" alt="Travel_Guide" width="420" height="315">
-                    <div class ="text-center centered-text">
-                        <a href="#">Code</a>
-                        <a href="#">Demo</a>
-                        <a href="#">About</a>
-                    </div>
-                    <p><strong>Travel Guide</strong></p>
-                </div>
-            </div>
+        <div class="grid">
+            <figure class="effect-kira">
+                <img src="images/mboutique.png" alt="mboutique"/>
+                <figcaption>
+                    <h2><span>Mboutique</span></h2>
+                    <p>
+                        <a href="#"><i class="fa fa-cog fa-spin"></i>Try it out</a>
+                        <a href="#"><i class="fa fa-code"></i>Code</a>
+                    </p>
+                </figcaption>
+            </figure>
+            <figure class="effect-kira">
+                <img src="images/memory_match.png" alt="memory-match"/>
+                <figcaption>
+                    <h2>Memory <span>Match</span></h2>
+                    <p>
+                        <a href="#"><i class="fa fa-cog fa-spin"></i>Try it out</a>
+                        <a href="#"><i class="fa fa-code"></i>Code</a>
+                    </p>
+                </figcaption>
+            </figure>
         </div>
     </div>
 </div>
@@ -178,12 +172,13 @@
 
 <!-- Container (Contact Section) -->
 <div id="contact" class="bg-2 container">
-    <h2 class="text-center">Contact</h2>
+    <h2 class="text-center">Contact Me</h2>
     <div class="row">
         <div class="col-md-4">
-            <p><i class="fa fa-github fa-fw"></i><a href="https://github.com/srayuthchoun">Github </a></p>
-            <p><i class="fa fa-envelope fa-fw"></i><a href="mailto:srayuth.choun@gmail.com">Email</a></p>
-            <p><i class="fa fa-linkedin-square fa-fw"></i><a href="https://www.linkedin.com/in/srayuth-choun-882b18112">Linkedin </a></p>
+            <p><i class="fa fa-fw fa-github icon"></i><a href="https://github.com/srayuthchoun">Github </a></p>
+            <p><i class="fa fa-fw fa-envelope icon"></i><a href="mailto:srayuth.choun@gmail.com">Email</a></p>
+            <p><i class="fa fa-fw fa-linkedin-square icon"></i><a href="https://www.linkedin.com/in/srayuth-choun-882b18112">Linkedin </a>
+            </p>
         </div>
         <div class="col-md-8">
             <div class="row">
@@ -214,6 +209,9 @@
     </a><br><br>
     <p>© 2016 Srayuth Choun</p>
 </footer>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script src="script.js"></script>
 </body>
 </html>
