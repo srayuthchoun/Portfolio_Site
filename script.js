@@ -23,7 +23,7 @@ $(document).ready(function () {
     });
 });
 
-<!-- Add Google Maps -->
+//Add Google Maps
 var myCenter = new google.maps.LatLng(33.7408, -117.8814);
 
 function initialize() {
@@ -45,3 +45,9 @@ function initialize() {
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
+
+//Used to mask email address on html and send email
+function email(x) {
+    var mail = "mailto:" + x + "@gmail.com";
+    window.location = mail;
+}
