@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-    padding: 80px 120px;
+    padding: 45px 15px;
 }
 
 header {
@@ -29,7 +29,7 @@ header {
 
 header .header-content {
     position: relative;
-    top: 15%;
+    top: 22%;
     width: 100%;
     padding: 100px 15px;
     text-align: center;
@@ -39,7 +39,7 @@ header .header-content .header-content-inner h1 {
     margin-top: 15px;
     margin-bottom: 15px;
     font-weight: 700;
-    font-size: 3vw;
+    font-size: 3.3vw;
     font-family: 'Courgette', cursive;
     text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }
@@ -58,7 +58,7 @@ header .header-content .header-content-inner p {
 
 .bg-1 p {
     font-style: italic;
-    font-size: 20px
+    font-size: 16px;
 }
 
 .bg-2 h2 {
@@ -169,197 +169,21 @@ textarea {
     font-size: 20px;
 }
 
-
 .logo img{
     width: 130px;
     height: 130px;
 }
 
 .icon {
-    font-size: 35px;
+    font-size: 50px;
 }
-
-.grid {
-    position: relative;
-    clear: both;
-    margin: 0 auto;
-    padding: 1em 0 4em;
-    max-width: 1000px;
-    list-style: none;
-    text-align: center;
-    font-family: Montserrat, sans-serif;
-}
-
-/* Common style */
-.grid figure {
-    position: relative;
-    float: left;
-    overflow: hidden;
-    margin: 10px 1%;
-    min-width: 320px;
-    max-width: 480px;
-    max-height: 360px;
-    width: 48%;
-    height: auto;
-    background: #3085a3;
-    text-align: center;
-    cursor: pointer;
-}
-
-.grid figure img {
-    position: relative;
-    display: block;
-    min-height: 100%;
-    max-width: 100%;
-    opacity: 0.8;
-}
-
-.grid figure figcaption {
-    padding: 2em;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 1.25em;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-
-.grid figure figcaption::before,
-.grid figure figcaption::after {
-    pointer-events: none;
-}
-
-.grid figure figcaption,
-.grid figure figcaption > a {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-/* Anchor will cover the whole item by default */
-/* For some effects it will show as a button */
-.grid figure figcaption > a {
-    z-index: 1000;
-    text-indent: 200%;
-    white-space: nowrap;
-    font-size: 0;
-    opacity: 0;
-}
-
-.grid figure h2 {
-    word-spacing: -0.15em;
-    font-weight: 300;
-    color: #fbfbfb;
-    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
-    font-size: 2.8vh;
-    text-align: center;
-}
-
-.grid figure h2 span {
-    font-weight: 800;
-}
-
-.grid figure h2,
-.grid figure p {
-    margin: 0;
-}
-
-.grid figure p {
-    letter-spacing: 1px;
-    font-size: 68.5%;
-    text-align: center;
-    position: relative;
-    top: 20%;
-}
-/*-----------------*/
-/***** Kira *****/
-/*-----------------*/
-figure.effect-kira {
-    background: #3c3c3c;
-    text-align: left;
-}
-
-figure.effect-kira img {
-    filter: none;
-    -webkit-filter: grayscale(0%);
-    -webkit-transition: opacity 0.35s;
-    transition: opacity 0.35s;
-    width: 500px;
-    height: 375px;
-}
-
-figure.effect-kira figcaption {
-    z-index: 1;
-}
-
-figure.effect-kira p {
-    padding: 2.25em 0.5em;
-    font-weight: 600;
-    font-size: 50%;
-    line-height: 1.5;
-    opacity: 0;
-    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-    transition: opacity 0.35s, transform 0.35s;
-    -webkit-transform: translate3d(0,-10px,0);
-    transform: translate3d(0,-10px,0);
-}
-
-figure.effect-kira p a {
-    position: relative;
-    top: 15px;
-    margin: 0 0.3em;
-    color: #101010;
-}
-
-figure.effect-kira p a:hover,
-figure.effect-kira p a:focus {
-    opacity: 0.6;
-}
-
-figure.effect-kira figcaption::before {
-    position: absolute;
-    top: 0;
-    right: 2em;
-    left: 2em;
-    z-index: -1;
-    height: 3.5em;
-    background: #fff;
-    content: '';
-    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-    transition: opacity 0.35s, transform 0.35s;
-    -webkit-transform: translate3d(0,4em,0) scale3d(1,0.023,1) ;
-    transform: translate3d(0,4em,0) scale3d(1,0.023,1);
-    -webkit-transform-origin: 50% 0;
-    transform-origin: 50% 0;
-}
-
-figure.effect-kira:hover img {
-    opacity: 0.5;
-    -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
-    filter: grayscale(100%);
-}
-
-figure.effect-kira:hover p {
-    opacity: 1;
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
-}
-
-figure.effect-kira:hover figcaption::before {
-    opacity: 0.7;
-    -webkit-transform: translate3d(0,5em,0) scale3d(1,1,1) ;
-    transform: translate3d(0,5em,0) scale3d(1,1,1);
-}
-
-
 
 @-webkit-keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
 @-moz-keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
 @keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
 
 .licensePlate {
-    width: 40%;
+    width: 45vw;
     opacity:0;  /* make things invisible upon start */
     -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animation ease-in and repeat it only 1 time */
     -moz-animation:fadeIn ease-in 1;
@@ -369,7 +193,88 @@ figure.effect-kira:hover figcaption::before {
     -moz-animation-fill-mode:forwards;
     animation-fill-mode:forwards;
 
-    -webkit-animation-duration:3s;
-    -moz-animation-duration:3s;
-    animation-duration:3s;
+    -webkit-animation-duration:2s;
+    -moz-animation-duration:2s;
+    animation-duration:2s;
+}
+
+.hovereffect {
+    width: 100%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+    margin: 15px 0;
+}
+
+.hovereffect .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+.hovereffect img {
+    display: block;
+    position: relative;
+    -webkit-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
+    width: 100%;
+}
+
+.hovereffect:hover img {
+
+    filter: grayscale(1) blur(3px);
+    -webkit-filter: grayscale(1) blur(3px);
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.hovereffect h2 {
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.hovereffect a.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    border: 1px solid #262626;
+    border-radius: 10px;
+    margin: 50px 10px 0 10px;
+/*    background-color: transparent;*/
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.hovereffect a.info:hover {
+    box-shadow: 0 0 5px #fff;
+}
+
+.hovereffect a.info, .hovereffect h2 {
+    -webkit-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    transform: scale(0.7);
+    -webkit-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    color: #fff;
+    /*text-transform: uppercase;*/
+}
+
+.hovereffect:hover a.info, .hovereffect:hover h2 {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
 }
