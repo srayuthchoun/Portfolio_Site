@@ -15,7 +15,7 @@ body {
 
 header {
     position: relative;
-    width: 100vw;
+    width: 100%;
     text-align: center;
     color: #fff;
     background-image: url(images/venice.jpg);
@@ -24,12 +24,12 @@ header {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    height: 100vh;
+    height: 100%;
 }
 
 header .header-content {
     position: relative;
-    top: 22%;
+    top: 15%;
     width: 100%;
     padding: 100px 15px;
     text-align: center;
@@ -41,12 +41,12 @@ header .header-content .header-content-inner h1 {
     font-weight: 700;
     font-size: 3.3vw;
     font-family: 'Courgette', cursive;
-    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 }
 
 header .header-content .header-content-inner p {
     margin-bottom: 0;
-    font-size: 25px;
+    font-size: 2em;
     font-weight: 300;
     color: rgba(255, 255, 255, .8);
 }
@@ -102,6 +102,7 @@ header .header-content .header-content-inner p {
     color: #f1f1f1;
     border-radius: 0;
     transition: .2s;
+    border-radius: .25rem
 }
 
 .btn:hover, .btn:focus {
@@ -112,7 +113,7 @@ header .header-content .header-content-inner p {
 
 #googleMap {
     width: 100%;
-    height: 400px;
+    height: 300px;
 }
 
 .navbar {
@@ -158,7 +159,7 @@ footer a:hover {
 }
 
 .form-control {
-    border-radius: 0;
+    border-radius: .25rem;
 }
 
 textarea {
@@ -169,33 +170,59 @@ textarea {
     font-size: 20px;
 }
 
-.logo img{
+.logo img {
     width: 130px;
     height: 130px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
-.icon {
-    font-size: 50px;
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+        opacity: 1 \9; /* IE9 only */
+    }
+    to {
+        opacity: 1;
+    }
 }
 
-@-webkit-keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
-@-moz-keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
-@keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
+@-moz-keyframes fadeIn {
+    from {
+        opacity: 0;
+        opacity: 1 \9; /* IE9 only */
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        opacity: 1 \9; /* IE9 only */
+    }
+    to {
+        opacity: 1;
+    }
+}
 
 .licensePlate {
-    width: 45vw;
-    opacity:0;  /* make things invisible upon start */
-    -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animation ease-in and repeat it only 1 time */
-    -moz-animation:fadeIn ease-in 1;
-    animation:fadeIn ease-in 1;
+    width: 35vw;
+    opacity: 0; /* make things invisible upon start */
+    -webkit-animation: fadeIn ease-in 1; /* call our keyframe named fadeIn, use animation ease-in and repeat it only 1 time */
+    -moz-animation: fadeIn ease-in 1;
+    animation: fadeIn ease-in 1;
 
-    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-    -moz-animation-fill-mode:forwards;
-    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode: forwards; /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
 
-    -webkit-animation-duration:2s;
-    -moz-animation-duration:2s;
-    animation-duration:2s;
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    animation-duration: 2s;
+
+    margin: auto;
 }
 
 .hovereffect {
@@ -251,7 +278,7 @@ textarea {
     border: 1px solid #262626;
     border-radius: 10px;
     margin: 50px 10px 0 10px;
-/*    background-color: transparent;*/
+    /*    background-color: transparent;*/
     background: rgba(0, 0, 0, 0.6);
 }
 
@@ -277,4 +304,22 @@ textarea {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
+}
+
+@media screen and (max-width: 435px) and (min-width: 320px) {
+    header .header-content .header-content-inner h1 {
+        font-size: 1em;
+    }
+
+    header .header-content {
+        top: 20%;
+    }
+
+    .licensePlate {
+        width: 65vw;
+    }
+
+    .bg-1 p {
+        font-size: 0.7em;
+    }
 }

@@ -39,13 +39,13 @@ $mail->isHTML(true);                                  // Set email format to HTM
 
 $mail->Subject = 'Someone has contacted you from your website.';
 $stuff = '';
-foreach($_POST as $key=>$value){
+foreach ($_POST as $key => $value) {
     $stuff .= "<h3>$key : $value</h3>";
 }
 $mail->Body = $stuff;
 $mail->AltBody = strip_tags($_POST['message']);
 
-if(!$mail->send()) {
+if (!$mail->send()) {
     echo 'Message could not be sent.';
     echo 'Mailer Error: ' . $mail->ErrorInfo;
 } else {

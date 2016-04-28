@@ -21,6 +21,11 @@ $(document).ready(function () {
             window.location.hash = hash;
         });
     });
+
+    //Collapse bootstrap mobile navbar menu when clicked
+    $(".navbar").find("li").on("click", "a", function () {
+        $('.navbar-collapse.in').collapse('hide');
+    });
 });
 
 //Add Google Maps
