@@ -18,11 +18,13 @@ header {
     width: 100%;
     text-align: center;
     color: #fff;
-    background-image: url(images/venice.jpg);
+    background-image: url(../images/venice.jpg);
+    background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    height: auto;
 }
 
 header .header-content {
@@ -303,6 +305,11 @@ textarea {
     -ms-transform: scale(1);
     transform: scale(1);
 }
+
+@media(min-width:768px) {
+    header {
+        height: 100%;
+    }
 
 @media screen and (max-width: 435px) and (min-width: 320px) {
     header .header-content .header-content-inner h1 {
