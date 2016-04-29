@@ -19,12 +19,10 @@ header {
     text-align: center;
     color: #fff;
     background-image: url(images/venice.jpg);
-    background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    height: 100%;
 }
 
 header .header-content {
