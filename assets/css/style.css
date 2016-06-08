@@ -111,6 +111,10 @@ header .header-content .header-content-inner p {
     color: #000;
 }
 
+#about p{
+    font-size: 20px;
+}
+
 #googleMap {
     width: 100%;
     height: 300px;
@@ -176,6 +180,7 @@ textarea {
     margin-top: 5px;
     margin-bottom: 5px;
 }
+
 
 @-webkit-keyframes fadeIn {
     from {
@@ -319,7 +324,7 @@ textarea {
         width: 65vw;
     }
 
-    .bg-1 p {
-        font-size: 0.7em;
+    #about p {
+        font-size: 0.82em;
     }
 }
