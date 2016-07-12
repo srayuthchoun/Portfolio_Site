@@ -29,7 +29,7 @@ header {
 
 header .header-content {
     position: relative;
-    top: 15%;
+    top: 25%;
     width: 100%;
     padding: 100px 15px;
     text-align: center;
@@ -111,10 +111,6 @@ header .header-content .header-content-inner p {
     color: #000;
 }
 
-#about p{
-    font-size: 20px;
-}
-
 #googleMap {
     width: 100%;
     height: 300px;
@@ -181,7 +177,6 @@ textarea {
     margin-bottom: 5px;
 }
 
-
 @-webkit-keyframes fadeIn {
     from {
         opacity: 0;
@@ -213,7 +208,7 @@ textarea {
 }
 
 .licensePlate {
-    width: 35vw;
+    width: 45vw;
     opacity: 0; /* make things invisible upon start */
     -webkit-animation: fadeIn ease-in 1; /* call our keyframe named fadeIn, use animation ease-in and repeat it only 1 time */
     -moz-animation: fadeIn ease-in 1;
@@ -324,7 +319,7 @@ textarea {
         width: 65vw;
     }
 
-    #about p {
-        font-size: 0.82em;
+    .bg-1 p {
+        font-size: 0.7em;
     }
 }
